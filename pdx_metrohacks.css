@@ -63,7 +63,6 @@ p {
     width: 100%;
     max-width: 1000px;
     margin: auto;
-    background-color: blue;
     display: flex;
     left: 50%;
     top: 50%;
@@ -72,7 +71,6 @@ p {
     display: inline-block;
     width: 45%;
     height: 100%;
-    background-color: red;
     margin: 0 auto;
 }
 .the-event h1, .the-event h2 {
@@ -87,24 +85,61 @@ p {
     width: 100px;
     height: 6px;
     background-color: white;
-    margin: auto;
+    margin: 50px auto;
 }
 /* INNOVATION SECTION */
-.innovation {
+.innovation, .who, .gallery, .register, .sponsors, .about {
     display: block;
     width: 100%;
     max-width: 1000px;
-    margin: auto;
-    background-color: blue;
+    margin: 50px auto;
 }
-.innovation h1, .innovation p {
+.innovation h1, .innovation p, .who h1, .who li, .who p, .gallery h1 {
     width: 95%;
-    background-color: red;
     margin: 0 auto;
+}
+.sponsors h1, .sponsors h2, .about h1, .about h2 {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
 }
 .innovation h1 {
     font-size: 36pt;
 }
 .innovation p {
-    margin: 0.5em auto;
+    margin: 0.5em auto 0 auto;
+}
+.register {
+    display: block;
+    background-color: #ffffffbf;
+    border-radius: 30px;
+    min-height: 200px;
+}
+.register h1 {
+    color: black;
+    width: 95%;
+    display: inline-block;
+    background-color: red;
+}
+.gallery-carousel, .org-profiles, .sponsor-logos {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    overflow-y: hidden;
+    height: 300px;
+    background-color: blue;
+    margin: 50px auto;
+
+}
+
+/* FOOOOOOOOOOOOOOTER */
+footer {
+    background-color: white;
+    width: 100%;
+    height: 250px;
+}
+footer > h1 {
+    color: black;
+    font-size: 12pt;
+    text-align: center;
 }
