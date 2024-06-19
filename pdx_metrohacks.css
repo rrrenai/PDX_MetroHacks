@@ -165,7 +165,7 @@ section {
     margin: 0.5em auto 0 auto;
 }
 .register {
-    display: block;
+    display: table;
     background-color: #ffffffbf;
     border-radius: 30px;
     min-height: 200px;
@@ -173,6 +173,30 @@ section {
 .register h1 {
     color: black;
     width: 95%;
+}
+.register p {
+    color: #000;
+    width: 95%;
+    margin: 10px auto;
+}
+.register a {
+    color: #FFF;
+    background-color: #871616;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 0 15px;
+}
+.register a:hover {
+    box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5); 
+}
+.register a:visited {
+    color: #871616;
+    background-color: none;
+    text-decoration: none;
+    border-width: 3px;
+    border-color: #871616;
+    border-radius: 15px;
+    padding: 0 15px;
 }
 .flex-container, .sponsor-logos {
     display: block;
