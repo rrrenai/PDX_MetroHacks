@@ -4,6 +4,8 @@ html, body {
     height: 100vh;
     width: 100vw;
     min-width: 700px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 body {
     background-color: #170202;
@@ -13,7 +15,6 @@ h1, .the-event h2 {
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: white;
 }
 p, .who li, .sponsors h2, .about h2 {
     font-family: "Archivo Narrow", sans-serif;
@@ -22,12 +23,14 @@ p, .who li, .sponsors h2, .about h2 {
     font-style: normal;
     font-size: 18pt;
 }
+.topnav.active {
+    color: blue;
+}
 .topnav {
     width: 100%;
     background-color: #30171759;
     overflow: hidden;
     position: fixed;
-    /* top: 0; */
     z-index: 999;
     align-items: center;
     display: flex;
@@ -35,18 +38,15 @@ p, .who li, .sponsors h2, .about h2 {
 }
 .topnav img {
     float: left;
-    /* margin: auto; */
 }
 .topnav h1 {
     display: inline-block;
     text-align: left;
-    /* padding: 0; */
     margin: 0;
     font-size: 18pt;
 }
 .topnav a {
     float: left;
-    /* display: block; */
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -70,7 +70,6 @@ p, .who li, .sponsors h2, .about h2 {
     display: inline-block;
     margin: 0;
     font-size: 42pt;
-    background-color: blue;
 }
 .title-page h2 {
     font-family: "Archivo Narrow", sans-serif;
@@ -102,13 +101,11 @@ section {
     margin-right: auto;
     width: 75%;
     max-width: 1000px;
-    background-color: red;
 }
 .center img {
     display: inline-block;
     vertical-align: middle;
     margin: 0;
-    background-color: yellow;
 }
 /* THE EVENT SECTION */
 .the-event {
@@ -191,7 +188,7 @@ section {
     box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5); 
 }
 .register a:visited {
-    color: #871616;
+    color: #5a0b0b;
     background-color: #00000000;
     text-decoration: none;
     border-width: 3px;
@@ -199,27 +196,41 @@ section {
     border-radius: 15px;
     padding: 0 15px;
 }
-.flex-container, .sponsor-logos {
-    display: block;
-    width: 100vw;
-    overflow: auto;
-    white-space: nowrap;
-    overflow-y: hidden;
-    height: 300px;
-    background-color: blue;
-    margin: 50px auto;
-    display: flex;
-    flex-wrap: nowrap;
 
+/* BORROWED SLIDE */
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
 }
-.flex-container > div {
+.carousel {
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 100%;
+}
+/* .carousel:hover .slide-container {
+    animation-play-state: paused;
+} */
+.slide-container, .sponsor-logos {
+    background-color: blue;
+    height: 100px;
+    animation: 10s slide infinite linear;
+    display: inline-block;
+    margin: 0;
+}
+.slide {
+    display: inline-block;
     background-color: #f1f1f1;
-    width: 100px;
-    margin: 10px;
+    width: 300px;
+    height: 100px;
+    margin: 0;
+    border-radius: 30px;
     text-align: center;
-    line-height: 75px;
     font-size: 30px;
-  }
+}
 
 /* FOOOOOOOOOOOOOOTER */
 footer {
