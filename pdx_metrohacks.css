@@ -9,7 +9,7 @@ html, body {
 }
 body {
     background-color: #170202;
-    color: white;
+    color: #fff;
 }
 h1, .the-event h2 {
     font-family: "Archivo Black", sans-serif;
@@ -54,7 +54,7 @@ p, .who li, .sponsors h2, .about h2 {
     color: #f1f1f1;
 }
 .topnav a:hover {
-    color: red;
+    color: #BF0603;
 }
 .right {
     float: right;
@@ -163,10 +163,10 @@ section {
     margin: 0.5em auto 0 auto;
 }
 .register {
-    display: table;
     background-color: #ffffffbf;
     border-radius: 30px;
     min-height: 200px;
+    /* max-width: 1000px; */
 }
 .register h1 {
     color: black;
@@ -174,13 +174,16 @@ section {
 }
 .register p {
     color: #000;
-    width: 95%;
+    width: 100%;
     margin: 10px auto;
+    display: inline-block;
+    text-align: center;
 }
 .register a {
     color: #FFF;
-    background-color: #871616;
+    background-color: #BF0603;
     text-decoration: none;
+    border: 4px solid #BF0603;
     border-radius: 15px;
     padding: 0 15px;
 }
@@ -188,11 +191,10 @@ section {
     box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5); 
 }
 .register a:visited {
-    color: #5a0b0b;
-    background-color: #00000000;
+    color: #BF0603;
+    background-color: #FFF;
     text-decoration: none;
-    border-width: 3px;
-    border-color: #871616;
+    border: 4px solid #BF0603;
     border-radius: 15px;
     padding: 0 15px;
 }
@@ -256,11 +258,6 @@ section {
     overflow-wrap: break-word;
 
 }
-/* .carousol__content h1 {
-    overflow-wrap: break-word;
-    white-space: normal;
-} */
-
 /* .carousel__image {
     background-size: cover;
     background-repeat: no-repeat;
@@ -268,9 +265,33 @@ section {
     height: 50%;
     margin: 15px 20px;
 } */
-
 .carousel__wrapper:hover .carousel__slide{
     animation-play-state: paused;
+}
+.about-container {
+    display: block;
+    align-items: center;
+    /* max-width: 1000px; */
+    max-height: 250px;
+    overflow: hidden;
+    border: 1px dashed gray;
+    margin: 0 auto;
+    /* white-space: wrap; */
+}
+.about-container-2 {
+    background-color: purple;
+    margin: 0 auto;
+    padding: 0;
+}
+.about-profile {
+    display: inline-block;
+    position: relative;
+    width: 450px;
+    height: 200px;
+    /* margin: 0 10px; */
+    background-color: #f1f1f1;
+    color: black;
+    border-radius: 30px;
 }
 
 /* FOOOOOOOOOOOOOOTER */
