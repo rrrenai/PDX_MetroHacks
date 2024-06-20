@@ -225,6 +225,24 @@ section {
     /* border: 1px dashed gray; */
     margin: 0 auto;
     white-space: nowrap;
+    position: relative;
+}
+.carousel__wrapper::before,
+.carousel__wrapper::after {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+.carousel__wrapper::before {
+    background: linear-gradient(to left, rgba(255,255,255,0), #170202);
+    left: 0;
+}
+.carousel__wrapper::after {
+    background: linear-gradient(to right, rgba(255,255,255,0), #170202);
+    right: 0;
 }
 .carousel {
     padding: 0;
@@ -269,18 +287,19 @@ section {
     animation-play-state: paused;
 }
 .about-container {
-    display: block;
-    align-items: center;
-    /* max-width: 1000px; */
-    max-height: 250px;
-    overflow: hidden;
-    border: 1px dashed gray;
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    max-height: 300px;
+    overflow-x: hidden;
+    /* border: 1px dashed gray; */
     margin: 0 auto;
-    /* white-space: wrap; */
 }
-.about-container-2 {
-    background-color: purple;
-    margin: 0 auto;
+.about-row {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    margin: 0 10px;
     padding: 0;
 }
 .about-profile {
@@ -288,7 +307,7 @@ section {
     position: relative;
     width: 450px;
     height: 200px;
-    /* margin: 0 10px; */
+    margin-bottom: 10px;
     background-color: #f1f1f1;
     color: black;
     border-radius: 30px;
