@@ -286,6 +286,11 @@ section {
 .carousel__wrapper:hover .carousel__slide{
     animation-play-state: paused;
 }
+
+.sponsor-logos p {
+    text-align: center;
+}
+
 .about-container {
     display: flex;
     justify-content: center;
@@ -311,6 +316,18 @@ section {
     background-color: #f1f1f1;
     color: black;
     border-radius: 30px;
+}
+.about-profile img {
+    display: inline-block;
+}
+.about-profile-text {
+    display: inline-block;
+    /* flex-direction: column;
+    margin: 0;
+    align-content: flex-start; */
+}
+.about-profile p {
+    font-size: 12pt;
 }
 
 /* FOOOOOOOOOOOOOOTER */
