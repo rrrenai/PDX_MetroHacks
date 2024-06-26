@@ -239,8 +239,7 @@ section {
     }
 }
 .carousel__wrapper {
-    display: flex;
-    align-items: center;
+    display: block;
 
     width: calc(var(--slides-in-view) * var(--slide-width));
     overflow: hidden;
@@ -268,7 +267,7 @@ section {
 }
 .carousel {
     padding: 0;
-    display: inline-block;
+    display: block;
     width: calc(var(--no-of-slides)*var(--slide-width));
     height: var(--slide-height);
     margin: 0;
@@ -350,6 +349,43 @@ section {
 }
 .about-profile p {
     font-size: 12pt;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+  /* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #FFF;
+    color: #000;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    position: absolute;
+    z-index: 99;
+}
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+  
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    overflow: visible;
 }
 
 /* FOOOOOOOOOOOOOOTER */
