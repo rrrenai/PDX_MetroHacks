@@ -2,9 +2,8 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    width: 100vw;
     min-width: 700px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     scroll-behavior: smooth;
 }
 body {
@@ -23,11 +22,47 @@ p, .who li, .sponsors h2, .about h2 {
     font-style: normal;
     font-size: 18pt;
 }
-.topnav.active {
-    color: blue;
-}
-.topnav {
+
+/* [class*="col-"] {
     width: 100%;
+}
+@media only screen and (min-width: 600px) {
+
+}
+@media only screen and (min-width: 768px) {
+
+} */
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .right a {display: none;}
+    .right a.icon {
+      float: right;
+      display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: relative;
+      right: 0;
+      /* top: 0; */
+    }
+    .topnav.responsive a {
+      float: none;
+      position: relative;
+      display: block;
+      text-align: left;
+    }
+    .right.responsive-content {
+        right: 0;
+    }
+}
+
+.topnav {
+    width: 100vw;
     background-color: #30171759;
     overflow: hidden;
     position: fixed;
@@ -60,11 +95,9 @@ p, .who li, .sponsors h2, .about h2 {
     float: right;
 }
 .title-page {
-    width: 100%;
     height: 100%;
     padding: 0;
     margin: auto 0;
-    float: left;
 }
 .title-page h1 {
     display: inline-block;
@@ -84,11 +117,10 @@ section {
     position: inherit;
     top: 0;
     left: 0;
-    height:100%;
-    width:100%;
+    height: 100vh;
+    width: 100vw;
     padding: 60px 0;
     margin:  0;
-    /* padding-left: 120px; */
     box-sizing: border-box;
 }
 .middle {
@@ -99,8 +131,7 @@ section {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
-    max-width: 1000px;
+    justify-content: center;
 }
 .center img {
     display: inline-block;
