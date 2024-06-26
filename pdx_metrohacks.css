@@ -3,7 +3,7 @@ html, body {
     padding: 0;
     height: 100vh;
     min-width: 700px;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 body {
@@ -23,15 +23,6 @@ p, .who li, .sponsors h2, .about h2 {
     font-size: 18pt;
 }
 
-/* [class*="col-"] {
-    width: 100%;
-}
-@media only screen and (min-width: 600px) {
-
-}
-@media only screen and (min-width: 768px) {
-
-} */
 .topnav .icon {
     display: none;
 }
@@ -46,15 +37,15 @@ p, .who li, .sponsors h2, .about h2 {
 @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
-      position: relative;
-      right: 0;
-      /* top: 0; */
+        position: relative;
+        right: 0;
+        /* top: 0; */
     }
     .topnav.responsive a {
-      float: none;
-      position: relative;
-      display: block;
-      text-align: left;
+        float: none;
+        position: relative;
+        display: block;
+        text-align: left;
     }
     .right.responsive-content {
         right: 0;
