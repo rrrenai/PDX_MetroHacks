@@ -168,7 +168,7 @@ section {
 }
 /* INNOVATION SECTION */
 .innovation, .who, .gallery, .register, .sponsors, .about {
-    display: block;
+    /* display: block; */
     width: 100%;
     max-width: 1000px;
     margin: 50px auto;
