@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    min-width: 700px;
+    /* min-width: 700px; */
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -33,9 +33,33 @@ p, .who li, .sponsors h2, .about h2 {
       float: right;
       display: block;
     }
+    .title-page h1 {
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        display: inline-block;
+        margin: 0;
+        font-size: 42pt;
+    }
+    .title-page h2 {
+        font-family: "Archivo Narrow", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        display: inline-block;
+        margin: 0;
+    }
 }
 @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
+    .title-page h1 {
+        display: none;
+    }
+    .title-page h2 {
+        display: none;
+    }
+    .topnav.responsive {
+        position: fixed;
+    }
     .topnav.responsive a.icon {
         position: relative;
         right: 0;
@@ -45,10 +69,11 @@ p, .who li, .sponsors h2, .about h2 {
         float: none;
         position: relative;
         display: block;
-        text-align: left;
+        text-align: right;
     }
     .right.responsive-content {
         right: 0;
+        position: absolute; 
     }
 }
 
@@ -90,6 +115,16 @@ p, .who li, .sponsors h2, .about h2 {
     padding: 0;
     margin: auto 0;
 }
+.page1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(media/Wallpaper/shapes.svg);
+    background-size: auto 25vh;
+    background-position: center 87%;
+    background-repeat: repeat-x;
+    position: relative;
+    overflow: hidden;
+}
 .title-page h1 {
     display: inline-block;
     margin: 0;
@@ -110,7 +145,7 @@ section {
     left: 0;
     height: 100vh;
     width: 100vw;
-    padding: 60px 0;
+    padding: 60px 20px;
     margin:  0;
     box-sizing: border-box;
 }
@@ -119,6 +154,7 @@ section {
     vertical-align: middle;
 }
 .center {
+    width: 100%;
     display: flex;
     margin-left: auto;
     margin-right: auto;
