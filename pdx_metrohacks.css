@@ -27,7 +27,7 @@ p, .who li, .sponsors h2, .about h2 {
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 870px) {
     .right a {display: none;}
     .right a.icon {
       float: right;
@@ -50,7 +50,7 @@ p, .who li, .sponsors h2, .about h2 {
         margin: 0;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 870px) {
     .title-page h1 {
         display: none;
     }
@@ -91,6 +91,7 @@ p, .who li, .sponsors h2, .about h2 {
     float: left;
 }
 .topnav h1 {
+    font-family: 'Archivo Black', sans-serif;
     display: inline-block;
     text-align: left;
     margin: 0;
@@ -125,7 +126,18 @@ p, .who li, .sponsors h2, .about h2 {
     position: relative;
     overflow: hidden;
 }
+.page5 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(media/Wallpaper/skyline.svg), linear-gradient(#87161600, #871616FF);
+    background-size: auto 35vh;
+    background-position: center 97%, center bottom;
+    background-repeat: repeat-x;
+    position: relative;
+    overflow: hidden;
+}
 .title-page h1 {
+    font-family: 'Archivo Black', sans-serif;
     display: inline-block;
     margin: 0;
     font-size: 42pt;
@@ -150,14 +162,17 @@ section {
     box-sizing: border-box;
 }
 .middle {
-    display: table-cell;
-    vertical-align: middle;
+    height: 100%;
+    align-items: center;
+}
+.titleblock {
+    display: flex;
 }
 .center {
+    height: 100vh;
     width: 100%;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
     justify-content: center;
 }
 .center img {
@@ -429,9 +444,13 @@ footer {
     background-color: white;
     width: 100%;
     height: 250px;
+    padding: 0;
+    margin: 0;
 }
 footer > h1 {
     color: black;
     font-size: 12pt;
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
