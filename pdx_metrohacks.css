@@ -15,6 +15,10 @@ h1, .the-event h2 {
     font-weight: 400;
     font-style: normal;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Archivo Black", "Archivo Narrow", "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+}
 p, .who li, .sponsors h2, .about h2 {
     font-family: "Archivo Narrow", sans-serif;
     font-optical-sizing: auto;
@@ -157,23 +161,33 @@ section {
     left: 0;
     height: 100vh;
     width: 100vw;
-    padding: 60px 20px;
+    /* padding: 60px 20px; */
     margin:  0;
     box-sizing: border-box;
 }
 .middle {
-    height: 100%;
+    height: 100vh;
+    display: flex;
     align-items: center;
+}
+.middle2 {
+    flex-direction: column;
+    margin: auto;
+    height: 100vh;
+    align-content: center;
 }
 .titleblock {
     display: flex;
 }
 .center {
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.top-page > .center {
+    padding-top: 0;
 }
 .center img {
     display: inline-block;
@@ -181,11 +195,19 @@ section {
     margin: 0;
 }
 /* THE EVENT SECTION */
+#the-event > .middle {
+    max-width: 50vw;
+    display: flex;
+}
+#sponsors > .middle {
+    flex-direction: column;
+}
 .the-event {
     width: 100%;
     max-width: 1000px;
     margin: auto;
     display: flex;
+    align-items: start;
     left: 50%;
     top: 50%;
 }
@@ -252,18 +274,20 @@ section {
     display: inline-block;
     text-align: center;
 }
-.register a {
+.register-button {
     color: #FFF;
     background-color: #BF0603;
     text-decoration: none;
     border: 4px solid #BF0603;
     border-radius: 15px;
     padding: 0 15px;
+    font-size: 14pt;
+    font-family: "Archivo Narrow";
 }
-.register a:hover {
+.register-button:hover {
     box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5); 
 }
-.register a:visited {
+.register-button:visited {
     color: #BF0603;
     background-color: #FFF;
     text-decoration: none;
