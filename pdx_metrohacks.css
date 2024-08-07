@@ -136,6 +136,9 @@ p, .who li, .sponsors h2, .about h2 {
     position: relative;
     overflow: hidden;
 }
+#the-event > img {
+    float: left;
+}
 .title-page h1 {
     font-family: 'Archivo Black', sans-serif;
     display: inline-block;
