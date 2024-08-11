@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Archivo Black", "Archivo Narrow", "Segoe UI",Arial,sans-serif;
     font-weight: 400;
 }
-p, .who li, .sponsors h2, .about h2 {
+p, .who li, .sponsors h2, .about h2, li {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;

@@ -1,0 +1,39 @@
+.head {
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+details {
+    user-select: none;
+    width: 75%;
+    background-color: #ffffff18;
+    margin: 0 auto;
+}
+  
+details>summary span.icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s;
+    margin-left: auto;
+}
+
+details[open] summary span.icon {
+    transform: rotate(180deg);
+    transform-origin: 50% 50%;
+}
+
+summary {
+    display: flex;
+    cursor: pointer;
+}
+
+summary::-webkit-details-marker,
+summary::-moz-details-marker {
+    display: none;
+}
+
+details > p {
+    margin: 0;
+    padding: 0;
+}
