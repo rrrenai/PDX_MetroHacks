@@ -502,3 +502,9 @@ footer > h1 {
     margin: 0;
     font-family: "Archivo Narrow";
 }
+footer > div {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}
