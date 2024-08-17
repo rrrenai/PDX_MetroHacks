@@ -30,7 +30,7 @@ p, .who li, .sponsors h2, .about h2, li {
     display: none;
 }
 
-@media screen and (max-width: 955px) {
+@media screen and (max-width: 1080px) {
     .right a {display: none;}
     .right a.icon {
       float: right;
@@ -53,7 +53,7 @@ p, .who li, .sponsors h2, .about h2, li {
         margin: 0;
     }
 }
-@media screen and (max-width: 955px) {
+@media screen and (max-width: 1080px) {
     .title-page h1, .title-page h2 {
         display: none;
     }
