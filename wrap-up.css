@@ -1,0 +1,27 @@
+section > .imgdiv {
+    width: 75%;
+    display: block;
+    margin: auto;
+}
+
+div {
+    text-align: center;
+}
+
+.images {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: stretch;
+    gap: 10px 10px; /* row-gap column gap */
+    justify-content: center;
+    justify-self: center;
+    min-width: 500px;
+}
+
+.photo-button {
+    margin: 25px;
+}
+
+.first-line {
+    margin-top: 150px;
+}
